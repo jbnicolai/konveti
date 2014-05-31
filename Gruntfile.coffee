@@ -52,7 +52,13 @@ module.exports = ( grunt ) ->
         dest: "lib"
         ext: ".js"
         options:
-            bare: yes
+          bare: yes
+    concat:
+      options:
+        banner: "#!/usr/bin/env node\n"
+      lib:
+        src: "lib/konveti.js"
+        dest: "lib/konveti.js"
     watch:
       lib:
         files: [
@@ -62,12 +68,14 @@ module.exports = ( grunt ) ->
           nospawn: yes
         tasks: [
           "clear"
-          "coffeelint:lib"
-          "coffee:lib"
+          "coffeelint"
+          "coffee"
+          "concat"
         ]
 
   grunt.registerTask "default", [
     "clear"
     "coffeelint"
     "coffee"
+    "concat"
   ]
