@@ -40,6 +40,8 @@
   "dependencies": {
     "commander": "^2.2.0",
     "text-table": "^0.2.0",
-    "chalk": "^0.4.0"
+    "chalk": "^0.4.0",
+    "convert-json": "^0.3.2",
+    "mkdirp": "^0.5.0"
   }
 }
