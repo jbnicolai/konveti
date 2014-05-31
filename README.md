@@ -8,7 +8,8 @@
 
 ## Note
 
-For now, **konvèti**
+For now, **konvèti** only converts `csv` to `json` and `json` to `csv`, because it's the only use I have for now. :)  
+I will add more converters in the future.
 
 ## Getting Started
 
