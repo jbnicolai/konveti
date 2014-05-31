@@ -22,7 +22,9 @@
       "url": "https://github.com/leny/konveti/blob/master/LICENSE-MIT"
     }
   ],
-  "main": "lib/konveti",
+  "bin": {
+    "konveti": "lib/konveti.js"
+  },
   "engines": {
     "node": ">= 0.8.0"
   },
