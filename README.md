@@ -1,6 +1,6 @@
 # konvèti 
 
-[![NPM version](http://img.shields.io/npm/v/konveti.svg)](https://www.npmjs.org/package/konveti) [![Build Status](https://secure.travis-ci.org/leny/konveti.png?branch=master)](http://travis-ci.org/leny/konveti) ![Dependency Status](https://david-dm.org/leny/konveti.svg) ![Downloads counter](http://img.shields.io/npm/dm/konveti.svg)
+[![NPM version](http://img.shields.io/npm/v/konveti.svg)](https://www.npmjs.org/package/konveti) ![Dependency Status](https://david-dm.org/leny/konveti.svg) ![Downloads counter](http://img.shields.io/npm/dm/konveti.svg)
 
 > Simple file converter
 
