@@ -33,5 +33,10 @@
     "matchdep": "^0.3.0",
     "grunt-clear": "^0.2.1",
     "grunt-contrib-watch": "^0.6.1"
+  },
+  "dependencies": {
+    "commander": "^2.2.0",
+    "text-table": "^0.2.0",
+    "chalk": "^0.4.0"
   }
 }
