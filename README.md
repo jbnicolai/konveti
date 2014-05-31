@@ -40,7 +40,10 @@ Licensed under the MIT license.
 
 ## TODO
 
-* Review & Refactor
-* Optional force format instead of using file extension
-* Add Unit Test ;)
-* Add more converters
+* [ ] Option to list supported converters
+* [ ] Review & Refactor
+* [ ] Optional force format instead of using file extension
+* [ ] Add Unit Test ;)
+* [ ] Add more converters
+    * [ ] markdown
+    * [ ] images
