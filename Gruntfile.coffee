@@ -43,17 +43,20 @@ module.exports = ( grunt ) ->
           level: "error"
       lib:
         files:
-          src: [ "src/*.coffee" ]
+          src: [ "src/**/*.coffee" ]
     coffee:
       lib:
+        expand: yes
+        cwd: "src"
+        src: [ "**/*.coffee" ]
+        dest: "lib"
+        ext: ".js"
         options:
-          bare: yes
-        files:
-          "lib/konveti.js": "src/konveti.coffee"
+            bare: yes
     watch:
       lib:
         files: [
-          "src/*.coffee"
+          "src/**/*.coffee"
         ]
         options:
           nospawn: yes
