@@ -1,8 +1,17 @@
 {
   "name": "konveti",
   "version": "0.0.1",
-  "description": "Multipurpose file converter",
-  "keywords": [],
+  "description": "Simple file converter",
+  "keywords": [
+    "file",
+    "converter",
+    "commandline",
+    "cli",
+    "terminal",
+    "conversion",
+    "csv",
+    "json"
+  ],
   "homepage": "https://github.com/leny/konveti",
   "author": {
     "name": "leny",
