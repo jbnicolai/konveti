@@ -30,9 +30,7 @@ The supported formats are :
 | Source Format | Destination Format |
 |:-------------:|:------------------:|
 | `csv` | `json` |
-
-**Note:** For now, **konvèti** only converts `csv` to `json`, because it's the only use I have for now. :)  
-I will add more converters in the future.
+| `md` | `pdf` |
 
 ## Contributing
 

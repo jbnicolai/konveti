@@ -23,6 +23,8 @@ pkg = require "../package.json"
 oConverters =
     csv:
         json: "csvtojson"
+    md:
+        pdf: "markdowntopdf"
 
 konveti
     .version pkg.version
