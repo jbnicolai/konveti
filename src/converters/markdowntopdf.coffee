@@ -12,9 +12,7 @@
 
 converter = require "markdown-pdf"
 
-exports.convert = ( sSource, fNext ) ->
+exports.convert = ( oOptions, fNext ) ->
     converter()
-        .from
-            .string sSource
-        .to
-            .string {}, fNext
+        .from oOptions.source.path
+        .to oOptions.destination.path, fNext

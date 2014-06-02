@@ -57,16 +57,26 @@ fs.exists sSourceFile, ( bExists ) ->
         console.log error "✘ there's no converter (yet) from '#{ sSourceFormat }' to '#{ sDestFormat }' format."
         process.exit 1
 
+    oOptions =
+        source:
+            format: sSourceFormat
+            path: sSourceFile
+        destination:
+            format: sDestFormat
+            path: sDestFile
+
     fs.readFile sSourceFile, { encoding: "utf-8" }, ( oError, sContent ) ->
         if oError
             console.log error "✘ An error occuring while reading the '#{ sSourceFile }' file."
             console.log oError
             process.exit 1
-        require( "./converters/#{ sConverter }.js" ).convert sContent, ( oError, sConvertedContent ) ->
+        oOptions.source.content = sContent
+        require( "./converters/#{ sConverter }.js" ).convert oOptions, ( oError, sConvertedContent, bFileIsAlreadyCreated ) ->
             if oError
                 console.log error "✘ An error occuring while converting the '#{ sSourceFile }' file to #{ sDestFormat }."
                 console.log oError
                 process.exit 1
+            return console.log success "✔ The converted file is written at '#{ sDestFile }' path." if bFileIsAlreadyCreated
             mkdirp path.dirname( sDestFile ), ( oError ) ->
                 if oError
                     console.log error "✘ An error occuring while write the '#{ sDestFile }'."

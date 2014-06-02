@@ -12,10 +12,10 @@
 
 converter = require "convert-json"
 
-exports.convert = ( sSource, fNext ) ->
+exports.convert = ( oOptions, fNext ) ->
     converter
             type: "csv"
-            input: sSource
+            input: oOptions.source.content
             output: null
         , ( oError, sConverted ) ->
             return fNext oError if oError
